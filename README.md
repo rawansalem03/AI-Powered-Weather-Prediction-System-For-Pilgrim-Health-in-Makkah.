@@ -1,0 +1,2 @@
+# AI-Powered-Weather-Prediction-System-For-Pilgrim-Health-in-Makkah.
+AI-powered weather prediction system designed to enhance pilgrim health and safety in Makkah during Hajj seasons. The project uses Deep Neural Networks (DNN), weather analytics, and WBGT heat index calculations to predict health risks such as heat exhaustion and provide real-time preventive recommendations for safer pilgrimage management.
