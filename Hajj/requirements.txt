@@ -3,7 +3,6 @@ flask-cors
 pandas
 requests
 supabase
-tensorflow==2.15.0
 scikit-learn
 joblib
 numpy
