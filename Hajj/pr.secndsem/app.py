@@ -1,11 +1,21 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=".", static_url_path="")
 
 @app.route("/")
 def home():
-    return """
-    <h1>AI-Powered Weather Prediction System for Pilgrim Health in Makkah</h1>
-    <p>The project has been deployed successfully.</p>
-    <p>This system uses AI and weather analytics to support pilgrim health and safety.</p>
-    """
+    return send_from_directory(".", "employee_dashboard.html")
+
+@app.route("/<path:path>")
+def files(path):
+    return send_from_directory(".", path)from flask import Flask, send_from_directory
+
+app = Flask(__name__, static_folder=".", static_url_path="")
+
+@app.route("/")
+def home():
+    return send_from_directory(".", "employee_dashboard.html")
+
+@app.route("/<path:path>")
+def files(path):
+    return send_from_directory(".", path)
