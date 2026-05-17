@@ -67,3 +67,10 @@ print("\n" + "="*30)
 print("✅ DNN model generated and saved successfully!")
 print("📁 Path: ai_models/hajj_health_model.h5")
 print("="*30)
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "AI Weather Prediction System Running Successfully!"
